@@ -1,32 +1,30 @@
 # Foodie Bucket List-CRUD
+![](public/screenshots/screenshot_index.jpg)
 
 ## 📖 Introduction
-****
 
 This website is a Foodie Bucket List in Taipei which contains all restaurants’ addresses, phone numbers, categories, and ratings. Moreover, you can use the search bar to check certain restaurants and categories. Lastly, you can click one of the lists to view the detailed description of restaurants.
 
 ## 🎮 Features
-Users can overview all restaurants, including:
 
+Users can overview all restaurants, including:
 - Restaurant pictures
 - Restaurant names
 - Rating
 - Categories
 
 Users can view the detail of the restaurant, including:
-
 - Restaurant names
 - Categories
 - Addresses and google map
 - Phone numbers
 - The detail of the description
+![](public/screenshots/screenshot_detail.jpg)
 
 Users can use the search bar to check certain restaurants and categories
-
 - When it’s a typo, and cannot find any restaurant, it will display an error message
 
 Users can add a new restaurant, including:
-
 - Restaurant name
 - Category
 - Image link
@@ -34,9 +32,9 @@ Users can add a new restaurant, including:
 - Phone numbers
 - Rating
 - The detail of the description
+![](public/screenshots/screenshot_new.jpg)
 
-Users can edit a new restaurant, including:
-
+Users can edit a restaurant, including:
 - Restaurant name
 - Category
 - Image link
@@ -44,8 +42,11 @@ Users can edit a new restaurant, including:
 - Phone numbers
 - Rating
 - The detail of the description
+![](public/screenshots/screenshot_edit.jpg)
+
 
 Finally, Users can delete a restaurant from the list
+- Reminder will show when click a delete button
 
 ## 🛠️ Installation
 
@@ -67,6 +68,7 @@ ctrl + c
 ```
 
 ## 👩🏻‍💻 Tech/framework used
+
 - VScode 1.73.1
 - Express 4.16.4
 - Express-handlebars 3.0.0
@@ -74,6 +76,7 @@ ctrl + c
 - font-awesome
 
 ## 🗺️ Roadmap
+
 - [x]  List of restaurants
     - Details of each restaurant
         - [x]  Category, address, phone, description
