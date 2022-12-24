@@ -112,7 +112,7 @@
     </div>
   </div>
 </div> --}}
-{{!-- 
+{{!--
 <!-- search bar: if & unless: home is Good + 改不成功的 search-->
 <div class="container search-bar">
   <div class="search-bar-outer">
@@ -163,8 +163,8 @@
     </div>
   </div>
 </div> --}}
-<!-- search bar：Noelle version -->
-<div class="container search-bar">
+<!-- search bar：Noelle version-1 -->
+{{!-- <div class="container search-bar">
   <div class="search-bar-outer">
     <div class="search-bar-inner">
       <form class="mb-0" action="/search">
@@ -210,9 +210,93 @@
       {{/unless}}
     </div>
   </div>
+</div> --}}
+
+
+<!-- search bar: if & unless: home is Good -->
+{{!-- <div class="container search-bar">
+  <div class="search-bar-outer">
+    <div class="search-bar-inner">
+      <div class="row align-items-end">
+        <form class="col-9" action="/search">
+          <h4 class="mb-2">尋找餐廳：</h4>
+          <div class="input-group">
+            <input type="text" name="keyword" class="form-control" placeholder="輸入餐廳、分類" aria-label="Restaurant Name..."
+              value="{{keyword}}" aria-describedby="search-button" />
+            <div class="input-group-append">
+              <button class="btn btn-major" type="submit" id="search-button">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+          {{#if keyword}}
+          <div class="d-flex justify-content-end mt-3">
+            <div class="col-3">
+              <select class="form-select" aria-label="select sort" role="button" name="sort"
+                onchange="this.form.submit()">
+                <option {{selected sortSelected.default}} value="default">顯示全部</option>
+                <option {{selected sortSelected.AtoZ}} value="AtoZ">A → Z</option>
+                <option {{selected sortSelected.ZtoA}} value="ZtoA">Z → A</option>
+                <option {{selected sortSelected.category}} value="category">類別</option>
+                <option {{selected sortSelected.location}} value="location">地區</option>
+              </select>
+            </div>
+          </div>
+          {{/if}}
+        </form>
+        {{#unless keyword}}
+        <form class="col-3" action="/" method="GET">
+          <div class="input-group">
+            <select class="form-select" aria-label="select sort" role="button" name="sort"
+              onchange="this.form.submit()">
+              <option {{selected sortSelected.default}} value="default">顯示全部</option>
+              <option {{selected sortSelected.AtoZ}} value="AtoZ">A → Z</option>
+              <option {{selected sortSelected.ZtoA}} value="ZtoA">Z → A</option>
+              <option {{selected sortSelected.category}} value="category">類別</option>
+              <option {{selected sortSelected.location}} value="location">地區</option>
+            </select>
+          </div>
+        </form>
+        {{/unless}}
+      </div>
+    </div>
+  </div>
+</div> --}}
+
+<div class="container search-bar">
+  <div class="search-bar-outer">
+    <div class="search-bar-inner">
+      <form action="/">
+        <h4>尋找餐廳：</h4>
+        <div class="row align-items-end">
+          <div class="col-9">
+            <div class="input-group">
+              <input type="text" name="keyword" class="form-control" placeholder="輸入餐廳、分類"
+                aria-label="Restaurant Name..." value="{{keyword}}" aria-describedby="search-button" />
+              <div class="input-group-append">
+                <button class="btn btn-major" type="submit" id="search-button">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 d-flex justify-content-end mt-3">
+            <div>
+              <select class="form-select" aria-label="select sort" role="button" name="sort"
+                onchange="this.form.submit()">
+                <option {{selected sortSelected.default}} value="default">顯示全部</option>
+                <option {{selected sortSelected.AtoZ}} value="AtoZ">A → Z</option>
+                <option {{selected sortSelected.ZtoA}} value="ZtoA">Z → A</option>
+                <option {{selected sortSelected.category}} value="category">類別</option>
+                <option {{selected sortSelected.location}} value="location">地區</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>
-
-
 
 
 <!-- restaurant list -->
@@ -241,7 +325,8 @@
             </div>
           </div>
           <div class="text-end">
-            <a href="/restaurants/{{this._id}}" role='button' class="index-btn-detail btn text-white" tabindex="-1">detail</a>
+            <a href="/restaurants/{{this._id}}" role='button' class="index-btn-detail btn text-white"
+              tabindex="-1">detail</a>
             <a href="/restaurants/{{this._id}}/edit" class="index-btn-edit btn" role='button'>edit</a>
             <form action="/restaurants/{{ this._id }}/delete" method="POST" style="display: inline;">
               <button type="submit" class="btn btn-danger" onclick="return confirm('Are u sure?');">delete</button>
