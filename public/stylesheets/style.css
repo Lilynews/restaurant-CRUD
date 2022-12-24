@@ -123,6 +123,8 @@ header {
 
 .new-card {
   background-color: #3D5C6F;
+  border-color: #3D5C6F;
+  border-radius: 1rem;
 }
 
 .main-btn-add {
@@ -141,4 +143,6 @@ header {
 
 .edit-card {
   background-color: #c55b0b;
+  border-color: #c55b0b;
+  border-radius: 1rem;
 }
