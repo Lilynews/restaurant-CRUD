@@ -1,5 +1,5 @@
 # Foodie Bucket List-CRUD
-![](public/screenshots/screenshot_index.jpg)
+![](public/screenshots/screenshot_index.png)
 
 ## 📖 Introduction
 
@@ -19,7 +19,7 @@ Users can view the detail of the restaurant, including:
 - Addresses and google map
 - Phone numbers
 - The detail of the description
-![](public/screenshots/screenshot_detail.jpg)
+![](public/screenshots/screenshot_detail.png)
 
 Users can use the search bar to check certain restaurants and categories
 - When it’s a typo, and cannot find any restaurant, it will display an error message
@@ -32,7 +32,7 @@ Users can add a new restaurant, including:
 - Phone numbers
 - Rating
 - The detail of the description
-![](public/screenshots/screenshot_new.jpg)
+![](public/screenshots/screenshot_new.png)
 
 Users can edit a restaurant, including:
 - Restaurant name
@@ -42,7 +42,7 @@ Users can edit a restaurant, including:
 - Phone numbers
 - Rating
 - The detail of the description
-![](public/screenshots/screenshot_edit.jpg)
+![](public/screenshots/screenshot_edit.png)
 
 
 Finally, Users can delete a restaurant from the list
