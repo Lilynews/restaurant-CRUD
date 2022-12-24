@@ -10,66 +10,68 @@
         </div>
       </div>
       {{!-- category --}}
-      <div class="mb-3 row">
-        <label for="category" class="col-form-label col-2">類別</label>
-        <div class="col-10">
-          <select name="category" id="category" class="form-select" aria-label="Default select example">
-            <option>中東料理</option>
-            <option>日本料理</option>
-            <option>義式餐廳</option>
-            <option>美式</option>
-            <option>酒吧</option>
-            <option>咖啡</option>
-          </select>
+        <div class="mb-3 row">
+          <label for="category" class="col-form-label col-2">類別</label>
+          <div class="col-10">
+            <select name="category" id="category" class="form-select" aria-label="Default select example">
+              <option>中東料理</option>
+              <option>日本料理</option>
+              <option>義式餐廳</option>
+              <option>美式</option>
+              <option>酒吧</option>
+              <option>咖啡</option>
+            </select>
+          </div>
         </div>
-      </div>
-      {{!-- image --}}
-      <div class="mb-3 row">
-        <label for="image" class="col-form-label col-2">Image Link</label>
-        <div class="col-10">
-          <input type="text" class="form-control" name="image" id="image" placeholder="http://..." required>
+        {{!-- image --}}
+        <div class="mb-3 row">
+          <label for="image" class="col-form-label col-2">Image Link</label>
+          <div class="col-10">
+            <input type="text" class="form-control" name="image" id="image" placeholder="http://..." required>
+          </div>
         </div>
-      </div>
-      {{!-- location --}}
-      <div class="mb-3 row">
-        <label for="location" class="col-form-label col-2">地址</label>
-        <div class="col-10">
-          <input type="text" class="form-control" name="location" id="location" placeholder="台北市大安區麗水街 5-9 號" required>
+        {{!-- location --}}
+        <div class="mb-3 row">
+          <label for="location" class="col-form-label col-2">地址</label>
+          <div class="col-10">
+            <input type="text" class="form-control" name="location" id="location" placeholder="台北市大安區麗水街 5-9 號"
+              required>
+          </div>
         </div>
-      </div>
-      {{!-- phone --}}
-      <div class="mb-3 row">
-        <label for="phone" class="col-form-label col-2">電話</label>
-        <div class="col-10">
-          <input type="text" class="form-control" name="phone" id="phone" placeholder="02 2396 0680" required>
+        {{!-- phone --}}
+        <div class="mb-3 row">
+          <label for="phone" class="col-form-label col-2">電話</label>
+          <div class="col-10">
+            <input type="text" class="form-control" name="phone" id="phone" placeholder="02 2396 0680" required>
+          </div>
         </div>
-      </div>
-      {{!-- google_map --}}
-      <div class="mb-3 row">
-        <label for="google_map" class="col-form-label col-2">Google Map Link</label>
-        <div class="col-10">
-          <input type="text" class="form-control" name="google_map" id="google_map" placeholder="https://goo.gl/maps/BKSPTqzJLRCKUSBd7" required>
+        {{!-- google_map --}}
+        <div class="mb-3 row">
+          <label for="google_map" class="col-form-label col-2">Google Map Link</label>
+          <div class="col-10">
+            <input type="text" class="form-control" name="google_map" id="google_map"
+              placeholder="https://goo.gl/maps/BKSPTqzJLRCKUSBd7" required>
+          </div>
         </div>
-      </div>
-      {{!-- rating --}}
-      <div class="mb-3 row">
-        <label for="rating" class="col-form-label col-2">評分</label>
-        <div class="col-10">
-          <input type="text" class="form-control" name="rating" id="rating" placeholder="4.9" required>
+        {{!-- rating --}}
+        <div class="mb-3 row">
+          <label for="rating" class="col-form-label col-2">評分</label>
+          <div class="col-10">
+            <input type="text" class="form-control" name="rating" id="rating" placeholder="4.9" required>
+          </div>
         </div>
-      </div>
-      {{!-- description --}}
-      <div class="mb-3 row">
-        <label for="description" class="col-sm-2 col-form-label">餐廳描述</label>
-        <div class="col-sm-10">
-          <textarea type="text" name="description" class="form-control" id="description" rows="6" placeholder="必點伊比利豬肋條、明太子奶油麵、月見牛肉燒,..每道菜都好吃啊！"
-            required></textarea>
-      </div>
-      {{!-- Button--}}
-      <div class="my-3 new-button text-center">
-        <button type="submit" class="new-btn-send btn">Send</button>
-        <a href="/" class="btn btn-secondary" role="button">Back</a>
-      </div>
+        {{!-- description --}}
+        <div class="mb-3 row">
+          <label for="description" class="col-sm-2 col-form-label">餐廳描述</label>
+          <div class="col-sm-10">
+            <textarea type="text" name="description" class="form-control" id="description" rows="6"
+              placeholder="必點伊比利豬肋條、明太子奶油麵、月見牛肉燒,..每道菜都好吃啊！" required></textarea>
+          </div>
+          {{!-- Button--}}
+          <div class="my-3 new-button text-center">
+            <button type="submit" class="new-btn-send btn">Send</button>
+            <a href="/" class="btn btn-secondary" role="button">Back</a>
+          </div>
     </form>
   </div>
 </div>
